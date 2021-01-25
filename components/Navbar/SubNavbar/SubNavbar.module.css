@@ -1,0 +1,184 @@
+.Navbar {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 90px;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease-out;
+    background-color: white;
+    background: linear-gradient(180deg,
+            rgba(255, 255, 255, 1) 95%,
+            rgba(255, 255, 255, 0) 100%);
+    z-index: 999;
+}
+
+.Navbar a {
+    padding: 0 20px;
+}
+
+.Navbar i {
+    color: rgb(82, 82, 82);
+    transition: all 0.3s ease-out;
+}
+
+.Logo {
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    color: black;
+    padding-right: 5%;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(180deg, #5b94ff 41%, #5d75ff 74%);
+}
+
+.Icons {
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.Icons a::after {
+    display: none;
+}
+
+.Icons a {
+    color: var(--darkgrey);
+    padding: 0 20px;
+}
+
+
+
+.Icons i {
+    font-size: 20px;
+}
+
+.Icons i:hover {
+    color: var(--turquoise);
+}
+
+.Resume {
+    border: none;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    height: 30px;
+    padding: 10px 20px;
+    margin: 0 10px 5px;
+    background-color: var(--turquoise);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+.Resume a,
+.Resume a:hover {
+    padding: 0;
+    color: inherit;
+}
+
+.Resume:hover {
+    opacity: 0.8;
+}
+
+.Hide {
+    transform: translateY(-90px);
+}
+
+.Sidebar {
+    display: none;
+    cursor: pointer;
+    height: 100%;
+}
+
+.Hamburger {
+    display: none;
+    position: relative;
+    top: 40px;
+    right: 2px;
+    width: 30px;
+    height: 4px;
+    background: linear-gradient(180deg, #5b94ff 41%, #5d75ff 74%);
+    border-radius: 2px;
+}
+
+.Hamburger::before,
+.Hamburger::after {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 4px;
+    background: linear-gradient(180deg, #5b94ff 41%, #5d75ff 74%);
+    border-radius: 2px;
+    position: relative;
+}
+
+.Hamburger::before {
+    top: -10px;
+}
+
+.Hamburger::after {
+    top: 6px;
+}
+
+.Rodal {
+    height: 80%;
+    padding-top: 100px;
+    padding-right: 50px;
+    text-align: center;
+}
+
+.RodalLinks {
+    list-style: none;
+    font-size: 20px;
+    padding: 0;
+}
+
+.RodalLinks li {
+    margin: 50px 0;
+}
+
+.RodalIcons {
+    padding-top: 80px;
+}
+
+.RodalButton {
+    margin-left: 80px;
+    margin-top: 50px;
+}
+
+.RodalButton .Resume {
+    font-size: 20px;
+    padding: 25px 25px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+@media (max-width: 940px) {
+    .Navbar {
+        padding: 0 5vw;
+    }
+
+    .Icons {
+        display: none;
+    }
+
+    .Logo a {
+        padding: 0;
+    }
+
+    .Sidebar {
+        display: block;
+    }
+
+    .Hamburger {
+        display: block;
+    }
+}

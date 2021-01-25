@@ -1,0 +1,74 @@
+.Fruity {
+    padding: 70px 6vw;
+    line-height: 2;
+    color: rgb(83, 83, 83);
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.Fruity code {
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0 3px;
+    background-color: rgb(235, 235, 235);
+}
+
+.Fruity h3 {
+    font-size: 3rem;
+    margin: 50px 0 20px;
+}
+
+.Fruity h4 {
+    font-size: 2rem;
+    color: black;
+    margin: 30px 0;
+}
+
+.Fruity p {
+    margin: 50px 0;
+}
+
+.Fruity b {
+    color: rgb(68, 68, 68);
+}
+
+.Icons {
+    color: var(--darkgrey);
+}
+
+.Icons i {
+    transition: all 0.3s ease-out;
+    padding: 30px 10px 0 0;
+}
+
+.Icons a {
+    font-weight: 600;
+}
+
+.Icons a:first-child {
+    padding-right: 50px;
+}
+
+.Icons i:hover {
+    color: var(--turquoise)
+}
+
+.ImageContainer {
+    width: 100%;
+    border-radius: 5px;
+    margin: 70px 0;
+}
+
+.ImageContainer img {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 0 rgba(80, 91, 152, 0.15);
+}
+
+@media (min-width: 900px) {
+    .Fruity {
+        padding: 70px 10vw;
+    }
+}
