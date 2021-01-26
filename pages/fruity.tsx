@@ -1,11 +1,8 @@
 import React, { ReactElement, useEffect } from 'react';
+import Link from 'next/link';
 
-import styles from './Fruity.module.css';
-import SubNavbar from '../Navbar/SubNavbar/SubNavbar';
-import pic1 from '../../assets/fruity-homepage.jpg';
-import pic2 from '../../assets/4.jpg';
-import pic3 from '../../assets/2.jpg';
-import { HashLink as Link } from 'react-router-hash-link';
+import styles from '../styles/Fruity.module.css';
+import SubNavbar from '../components/Navbar/SubNavbar/SubNavbar';
 
 export default function Fruity(): ReactElement {
   useEffect(() => {
@@ -44,7 +41,7 @@ export default function Fruity(): ReactElement {
           history.
         </p>
         <div className={styles.ImageContainer}>
-          <img src={pic1} alt="Homepage of Fruity" />
+          <img src="/assets/fruity-homepage.jpg" alt="Homepage of Fruity" />
         </div>
         <h4>Project Description</h4>
         <p>
@@ -56,7 +53,7 @@ export default function Fruity(): ReactElement {
           nothing else.
         </p>
         <div className={styles.ImageContainer}>
-          <img src={pic2} alt="Landing page of Fruity" />
+          <img src="/assets/4.jpg" alt="Landing page of Fruity" />
         </div>
         <p>
           <b>Redux</b> is used for state management for this app. It encourages
@@ -92,7 +89,7 @@ export default function Fruity(): ReactElement {
           <code>console.log</code>.
         </p>
         <div className={styles.ImageContainer}>
-          <img src={pic3} alt="Checkout page of Fruity" />
+          <img src="/assets/2.jpg" alt="Checkout page of Fruity" />
         </div>
         <p>
           Afterwards, I wrote unit tests using <b>Jest</b> and{' '}
@@ -106,7 +103,7 @@ export default function Fruity(): ReactElement {
           also forced me to better understand the design requirements, which
           encouraged me to design components in the end user's perspective.
         </p>
-        <Link to="/#fruity">Back to homepage</Link>
+        <Link href="/#fruity">Back to homepage</Link>
       </div>
     </>
   );

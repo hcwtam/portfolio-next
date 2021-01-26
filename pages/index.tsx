@@ -11,6 +11,10 @@ export default function Home() {
       <Head>
         <title>Wesley Tam | Front End Developer</title>
         <link rel="icon" href="/favicon.ico" />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+        />
       </Head>
 
       <Navbar />

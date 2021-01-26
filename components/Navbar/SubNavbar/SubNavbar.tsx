@@ -1,17 +1,18 @@
 import React, { ReactElement, useState, useEffect, useCallback } from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
 import Rodal from 'rodal';
 
 import 'rodal/lib/rodal.css';
 import styles from './SubNavbar.module.css';
-import cv from '../../../assets/Wesley_Tam_CV.pdf';
 
-const INITIAL_POSITION = window.scrollY;
+const INITIAL_POSITION = this === 'window' ? window.scrollY : 0;
 
 export default function SubNavbar(): ReactElement {
   const [position, setPosition] = useState(INITIAL_POSITION);
   const [show, setShow] = useState(true);
   const [openModal, setOpenModal] = useState(false);
+  const router = useRouter();
 
   const modalStyles = {
     height: '100vh',
@@ -73,7 +74,11 @@ export default function SubNavbar(): ReactElement {
 
   const resume = (
     <button className={styles.Resume}>
-      <a href={cv} target="_blank" rel="noopener noreferrer">
+      <a
+        href="../../assets/Wesley_Tam_CV.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         Resume
       </a>
     </button>
@@ -81,7 +86,7 @@ export default function SubNavbar(): ReactElement {
 
   return (
     <nav className={`${styles.Navbar} ${!show && styles.Hide}`}>
-      <Link to="/">
+      <Link href={router ? `/#${router.pathname.slice(1)}` : '/'}>
         <div className={styles.Logo}>WT</div>
       </Link>
       <div className={styles.Icons}>

@@ -1,7 +1,6 @@
 import React, { ReactElement } from 'react';
 
 import styles from './Projects.module.css';
-import Image from 'next/image';
 import other from './other.json';
 import Card from './Card/Card';
 import Link from 'next/link';
@@ -42,23 +41,25 @@ export default function Projects(): ReactElement {
             <li>SQLite</li>
           </ul>
           <Link href="/vetbooking">
-            <h5>Learn More</h5>
+            <a>
+              <h5>Learn More</h5>
+            </a>
           </Link>
         </div>
         <div className={styles.ImageContainer}>
           <Link href="/vetbooking">
-            <Image
-              src="/assets/vet-booking.jpg"
-              alt="project 1"
-              layout="fill"
-            />
+            <a>
+              <img src="/assets/vet-booking.jpg" alt="project 1" />
+            </a>
           </Link>
         </div>
       </div>
       <div className={styles.Project} id="reactgram">
         <div className={styles.ImageContainer}>
           <Link href="/reactgram">
-            <Image src="/assets/reactgram.jpg" alt="project 2" layout="fill" />
+            <a>
+              <img src="/assets/reactgram.jpg" alt="project 2" />
+            </a>
           </Link>
         </div>
         <div className={styles.Description}>
@@ -77,7 +78,9 @@ export default function Projects(): ReactElement {
             <li>Firebase</li>
           </ul>
           <Link href="/reactgram">
-            <h5>Learn More</h5>
+            <a>
+              <h5>Learn More</h5>
+            </a>
           </Link>
         </div>
       </div>
@@ -98,12 +101,16 @@ export default function Projects(): ReactElement {
             <li>Firebase</li>
           </ul>
           <Link href="/fruity">
-            <h5>Learn More</h5>
+            <a>
+              <h5>Learn More</h5>
+            </a>
           </Link>
         </div>
         <div className={styles.ImageContainer}>
           <Link href="/fruity">
-            <Image src="/assets/fruity.jpg" alt="project 3" layout="fill" />
+            <a>
+              <img src="/assets/fruity.jpg" alt="project 3" />
+            </a>
           </Link>
         </div>
       </div>

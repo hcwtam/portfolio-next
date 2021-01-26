@@ -1,23 +1,10 @@
 import React, { ReactElement, useEffect, useState } from 'react';
-import { HashLink as Link } from 'react-router-hash-link';
 import { Document, Page, pdfjs } from 'react-pdf';
+import Link from 'next/link';
 
-import styles from './YouVet.module.css';
-import SubNavbar from '../Navbar/SubNavbar/SubNavbar';
-import pic1 from '../../assets/vet-booking1.jpg';
-import pic2 from '../../assets/vet-booking5.jpg';
-import ERD from '../../assets/vet-ERD.png';
-import guest1 from '../../assets/vet-guest1.jpg';
-import guest2 from '../../assets/vet-guest2.png';
-import guest3 from '../../assets/vet-guest3.png';
-import guest4 from '../../assets/vet-guest4.png';
-import guest5 from '../../assets/vet-guest5.png';
-import guest6 from '../../assets/vet-guest6.png';
-import user1 from '../../assets/vet-booking3.jpg';
-import user2 from '../../assets/vet-booking6.jpg';
-import user3 from '../../assets/vet-booking7.jpg';
-import user4 from '../../assets/vet-booking8.jpg';
-import useWindowDimensions from '../../hooks/useWindowDimensions';
+import styles from '../styles/YouVet.module.css';
+import SubNavbar from '../components/Navbar/SubNavbar/SubNavbar';
+import useWindowDimensions from '../hooks/useWindowDimensions';
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
@@ -67,7 +54,10 @@ export default function YouVet(): ReactElement {
           make appointments effortlessly.
         </p>
         <div className={styles.ImageContainer}>
-          <img src={pic1} alt="Homepage of Vet Booking system" />
+          <img
+            src="/assets/vet-booking1.jpg"
+            alt="Homepage of Vet Booking system"
+          />
         </div>
         <h4>Project Description</h4>
         <p>
@@ -96,7 +86,7 @@ export default function YouVet(): ReactElement {
         </p>
 
         <div className={styles.ImageContainer}>
-          <img src={pic2} alt="Guest booking page" />
+          <img src="/assets/vet-booking5.jpg" alt="Guest booking page" />
         </div>
 
         <h4>Development Process</h4>
@@ -112,7 +102,7 @@ export default function YouVet(): ReactElement {
           <div className={styles.pdfContainer}>
             <div style={{ height: 673, margin: '0 auto', textAlign: 'center' }}>
               <Document
-                file="./vet-req-doc.pdf"
+                file="/assets/vet-req-doc.pdf"
                 options={{ workerSrc: '/pdf.worker.js' }}
                 onLoadSuccess={onDocumentLoadSuccess}
               >
@@ -156,7 +146,7 @@ export default function YouVet(): ReactElement {
           , which I would discover and fine-tune requirements during coding.
         </p>
         <div className={styles.ImageContainer}>
-          <img src={ERD} alt="ER Diagram" />
+          <img src="/assets/vet-ERD.png" alt="ER Diagram" />
         </div>
 
         <p>
@@ -183,35 +173,35 @@ export default function YouVet(): ReactElement {
           available vets.
         </p>
         <div className={styles.ImageContainer}>
-          <img src={guest1} alt="Guest booking step 1" />
+          <img src="/assets/vet-guest1.jpg" alt="Guest booking step 1" />
         </div>
         <p>
           2) List of filtered vets displayed as cards. PO clicks on one of the
           cards to learn more about the vet.
         </p>
         <div className={styles.ImageContainer}>
-          <img src={guest2} alt="Guest booking step 2" />
+          <img src="/assets/vet-guest2.png" alt="Guest booking step 2" />
         </div>
         <p>
           3) Directed to the vet's detail page. PO clicks on the "Book now"
           button.
         </p>
         <div className={styles.ImageContainer}>
-          <img src={guest3} alt="Guest booking step 3" />
+          <img src="/assets/vet-guest3.png" alt="Guest booking step 3" />
         </div>
         <p>4) Modal pops up, PO inserts email and phone number.</p>
         <div className={styles.ImageContainer}>
-          <img src={guest4} alt="Guest booking step 4" />
+          <img src="/assets/vet-guest4.png" alt="Guest booking step 4" />
         </div>
         <p>5) Clicks on confirm and voila!</p>
         <div className={styles.ImageContainer}>
-          <img src={guest5} alt="Guest booking step 5" />
+          <img src="/assets/vet-guest5.png" alt="Guest booking step 5" />
         </div>
         <p>
           5) After closing the success modal, user is invited to a signup page.
         </p>
         <div className={styles.ImageContainer}>
-          <img src={guest6} alt="Guest booking step 6" />
+          <img src="/assets/vet-guest6.png" alt="Guest booking step 6" />
         </div>
         <h5 style={{ textDecoration: 'underline' }}>User Features</h5>
         <p>
@@ -220,23 +210,25 @@ export default function YouVet(): ReactElement {
           to change booking time or delete booking.
         </p>
         <div className={styles.ImageContainer}>
-          <img src={user1} alt="Appointment panel" />
+          <img src="/assets/vet-booking3.jpg" alt="Appointment panel" />
         </div>
         <div className={styles.ImageContainer}>
-          <img src={user2} alt="Booking detail" />
+          <img src="/assets/vet-booking6.jpg" alt="Booking detail" />
         </div>
         <p>
           User may create, view, change and delete pet profiles at the pets
           page.
         </p>
         <div className={styles.ImageContainer}>
-          <img src={user3} alt="Pets page" />
+          <img src="/assets/vet-booking7.jpg" alt="Pets page" />
         </div>
         <div className={styles.ImageContainer}>
-          <img src={user4} alt="BoPetoking detail" />
+          <img src="/assets/vet-booking8.jpg" alt="Booking detail" />
         </div>
 
-        <Link to="/#vetbooking">Back to homepage</Link>
+        <Link href="/#vetbooking" scroll={false}>
+          Back to homepage
+        </Link>
       </div>
     </>
   );

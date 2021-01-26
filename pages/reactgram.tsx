@@ -1,12 +1,8 @@
 import React, { ReactElement, useEffect } from 'react';
 
-import styles from './Reactgram.module.css';
-import SubNavbar from '../Navbar/SubNavbar/SubNavbar';
-import pic1 from '../../assets/1.jpg';
-import pic2 from '../../assets/reactgram-profile.jpg';
-import pic3 from '../../assets/reactgram-modal.jpg';
-import pic4 from '../../assets/reactgram-settings.png';
-import { HashLink as Link } from 'react-router-hash-link';
+import styles from '../styles/Reactgram.module.css';
+import SubNavbar from '../components/Navbar/SubNavbar/SubNavbar';
+import Link from 'next/link';
 
 export default function Reactgram(): ReactElement {
   useEffect(() => {
@@ -44,7 +40,7 @@ export default function Reactgram(): ReactElement {
           saving posts, viewing user profiles as well as setting user details.
         </p>
         <div className={styles.ImageContainer}>
-          <img src={pic1} alt="Homepage of Reactgram" />
+          <img src="/assets/1.jpg" alt="Homepage of Reactgram" />
         </div>
         <h4>Project Description</h4>
         <p>
@@ -61,7 +57,7 @@ export default function Reactgram(): ReactElement {
           data such as showing and hiding components are simply passed as props.
         </p>
         <div className={styles.ImageContainer}>
-          <img src={pic3} alt="Modal of Reactgram" />
+          <img src="/assets/reactgram-modal.jpg" alt="Modal of Reactgram" />
         </div>
         <p>
           I have used <b>SWR</b>, a React Hooks library for remote data fetching
@@ -72,7 +68,7 @@ export default function Reactgram(): ReactElement {
         </p>
 
         <div className={styles.ImageContainer}>
-          <img src={pic2} alt="Profile of Reactgram" />
+          <img src="/assets/reactgram-profile.jpg" alt="Profile of Reactgram" />
         </div>
 
         <h4>Challenges encountered</h4>
@@ -86,7 +82,10 @@ export default function Reactgram(): ReactElement {
         </p>
 
         <div className={styles.ImageContainer}>
-          <img src={pic4} alt="Settings of Reactgram" />
+          <img
+            src="/assets/reactgram-settings.png"
+            alt="Settings of Reactgram"
+          />
         </div>
         <h4>Solutions and Takeaways</h4>
         <p>
@@ -99,7 +98,7 @@ export default function Reactgram(): ReactElement {
           success in writing much simpler, more maintainable code. I have also
           realised the importance and advantages of code refactoring.
         </p>
-        <Link to="/#reactgram">Back to homepage</Link>
+        <Link href="/#reactgram">Back to homepage</Link>
       </div>
     </>
   );
