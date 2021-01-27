@@ -3,20 +3,23 @@
     "description": "An application form for volunteer application.",
     "technologies": ["React", "Typescript","Formik"],
     "github": "https://github.com/hcwtam/spca-forms",
-    "link": "https://spca-forms.netlify.app/"
+    "link": "https://spca-forms.netlify.app/",
+    "image": "../../assets/spca-form.jpg"
 },{
         "title": "Typing Trainer",
         "description": "Improve your typing speed and accuracy by training everyday. Displays typing speed and error counts for each training session.",
         "technologies": ["React", "styled-component"],
         "github": "https://github.com/hcwtam/typing-trainer",
-        "link": "https://typing-trainer.netlify.app/"
+        "link": "https://typing-trainer.netlify.app/",
+        "image": "../../assets/typing-trainer.jpg"
     },
     {
         "title": "Fitness Tracker",
         "description": "An application that allows users to record their workout progress and displays progression graphically.",
         "technologies": ["React", "Redux", "Firebase"],
         "github": "https://github.com/hcwtam/projects/tree/master/024-workout-tracker",
-        "link": "https://gainz-tracc.web.app/"
+        "link": "https://gainz-tracc.web.app/",
+        "image": "../../assets/gainztracc.jpg"
     }
     
 ]

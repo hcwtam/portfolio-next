@@ -5,11 +5,9 @@ import other from './other.json';
 import Card from './Card/Card';
 import Link from 'next/link';
 
-interface Props {}
-
 export default function Projects(): ReactElement {
   const cards = other.map(
-    ({ title, description, technologies, github, link }) => (
+    ({ title, description, technologies, github, link, image }) => (
       <Card
         title={title}
         description={description}
@@ -17,6 +15,7 @@ export default function Projects(): ReactElement {
         github={github}
         link={link}
         key={title}
+        image={image}
       />
     )
   );

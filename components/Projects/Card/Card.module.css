@@ -3,13 +3,14 @@
     border-radius: 30px;
     background-color: rgb(233, 241, 237);
     font-weight: normal;
-    padding: 20px 40px;
+    padding: 10px 20px 40px;
     display: flex;
     flex-flow: column;
     justify-content: space-between;
     margin-top: 30px;
     box-shadow: 0 0 20px 0 rgba(80, 91, 152, 0.1);
     line-height: 1.8;
+    text-align: center;
 }
 
 .Card li {
@@ -60,11 +61,42 @@
     background-color: rgb(30, 33, 49);
 }
 
+.ImageContainer {
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+    top: 0;
+    border-radius: 20px;
+    margin: 0 auto 20px;
+    transition: all 0.3s ease-out;
+}
+
+.ImageContainer:hover {
+    transform: scale(1.02);
+}
+.ImageContainer>a::after{
+    background-color: transparent;
+    
+}
+
+.ImageContainer img {
+    width: 100%;
+    border-radius: 20px;
+    object-fit: contain;
+    box-shadow: 0 0 5px 0 rgba(80, 91, 152, 0.1);
+
+}
+
 @media (max-width: 1000px) {
     .Card {
         width: 100%;
         padding: 20px;
     }
+
+    .ImageContainer {
+        width: 100%;
+        max-width: 400px;
+        height: auto;}
 }
 
 @media (max-width: 600px) {

@@ -8,6 +8,7 @@ interface Props {
   technologies: string[];
   github: string;
   link: string;
+  image: string;
 }
 
 export default function Card({
@@ -15,17 +16,25 @@ export default function Card({
   description,
   technologies,
   github,
-  link
+  link,
+  image
 }: Props): ReactElement {
   return (
     <div className={styles.Card}>
       <div>
-        <h5>
+        <div className={styles.ImageContainer}>
           <a href={link || github} target="_blank" rel="noopener noreferrer">
-            {title}
+            <img src={image} alt={title} />
           </a>
-        </h5>
-        <p>{description}</p>
+        </div>
+        <div>
+          <h5>
+            <a href={link || github} target="_blank" rel="noopener noreferrer">
+              {title}
+            </a>
+          </h5>
+          <p>{description}</p>
+        </div>
       </div>
       <div>
         <ul>

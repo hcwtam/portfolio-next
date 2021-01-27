@@ -9,7 +9,7 @@ const INITIAL_POSITION = this === 'window' ? window.scrollY : 0;
 
 export default function Navbar(): ReactElement {
   const [position, setPosition] = useState(INITIAL_POSITION);
-  const [show, setShow] = useState(true);
+  const [show, setShow] = useState(false);
   const [openModal, setOpenModal] = useState(false);
 
   const modalStyles = {
