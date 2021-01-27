@@ -35,15 +35,21 @@ export default function About(): ReactElement {
           </li>
           <li>
             <div className={styles.Container}>
+              <img src="/assets/typescript.png" alt="Typescript logo" />
+            </div>
+            Typescript
+          </li>
+          <li>
+            <div className={styles.Container}>
               <img src="/assets/react.png" alt="React logo" />
             </div>
             React
           </li>
           <li>
             <div className={styles.Container}>
-              <img src="/assets/typescript.png" alt="Typescript logo" />
+              <img src="/assets/nextjs.png" alt="Next.js logo" />
             </div>
-            Typescript
+            Next.js
           </li>
           <li>
             <div className={styles.Container}>
