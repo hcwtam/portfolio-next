@@ -29,7 +29,7 @@ export default function Landing(): ReactElement {
       <section className={styles.Landing} id="landing">
         {content}
       </section>
-      <div className={styles.Infinite} />
+      {/* <div className={styles.Infinite} /> */}
     </>
   );
 }
