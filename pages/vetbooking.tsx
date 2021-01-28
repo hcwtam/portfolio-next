@@ -36,14 +36,14 @@ export default function YouVet(): ReactElement {
             <i className="fab fa-github" />
             View Github
           </a>
-          {/* <a
-            href="https://reactgram-ac3b0.web.app"
+          <a
+            href="https://vet-booking.netlify.app"
             target="_blank"
             rel="noopener noreferrer"
           >
             <i className="fas fa-external-link-alt" />
             Visit Project
-          </a> */}
+          </a>
         </div>
         <p>
           Whilst working as a volunteer in an animal welfare organisation, I was
