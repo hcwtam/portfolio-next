@@ -78,11 +78,11 @@ export default function YouVet(): ReactElement {
 
         <p>
           The back end of this project is a RESTful API written using{' '}
-          <b>Flask</b>, connected to a <b>SQLite</b> database. This provided the
-          opportunity to learn about Python and back end development in general.
-          I have gained a much deeper understanding on different aspects of web
-          development, and acquired a holistic view through both client-side and
-          server-side development.
+          <b>Flask</b>, connected to a <b>PostgreSQL</b> database. This provided
+          the opportunity to learn about Python and back end development in
+          general. I have gained a much deeper understanding on different
+          aspects of web development, and acquired a holistic view through both
+          client-side and server-side development.
         </p>
 
         <div className={styles.ImageContainer}>

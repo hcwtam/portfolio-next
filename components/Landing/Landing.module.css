@@ -57,11 +57,16 @@
 
 .Content {
   width: 100%;
-  padding: 130px 0 20px;
+  padding: 170px 0 20px;
   display: flex !important;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
+}
+
+.Content * {
+  z-index: 100;
 }
 
 

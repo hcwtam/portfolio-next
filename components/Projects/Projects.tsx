@@ -37,7 +37,7 @@ export default function Projects(): ReactElement {
             <li>React</li>
             <li>Typescript</li>
             <li>Flask</li>
-            <li>SQLite</li>
+            <li>PostgreSQL</li>
           </ul>
           <Link href="/vetbooking">
             <a>
