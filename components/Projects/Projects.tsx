@@ -74,7 +74,6 @@ export default function Projects(): ReactElement {
             <li>Context</li>
             <li>SWR</li>
             <li>Typescript</li>
-            <li>Firebase</li>
           </ul>
           <Link href="/reactgram">
             <a>
@@ -97,7 +96,6 @@ export default function Projects(): ReactElement {
             <li>React</li>
             <li>Redux</li>
             <li>Typescript</li>
-            <li>Firebase</li>
           </ul>
           <Link href="/fruity">
             <a>
