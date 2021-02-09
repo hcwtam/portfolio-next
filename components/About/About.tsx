@@ -25,13 +25,13 @@ export default function About(): ReactElement {
         <Image src="/assets/portrait.jpg" alt="portrait" layout="fill" />
       </div>
       <div className={styles.Technologies}>
-        <h4>Here are the technologies I use for development:</h4>
+        <h4>I utilise these technologies for web dev:</h4>
         <ul>
           <li>
             <div className={styles.Container}>
               <img src="/assets/javascript.png" alt="Javascript logo" />
             </div>
-            Javascript ES6+
+            Javascript
           </li>
           <li>
             <div className={styles.Container}>
@@ -59,6 +59,18 @@ export default function About(): ReactElement {
           </li>
           <li>
             <div className={styles.Container}>
+              <img src="/assets/nodejs.png" alt="Node.js logo" />
+            </div>
+            Node.js
+          </li>
+          <li>
+            <div className={styles.Container}>
+              <img src="/assets/express.png" alt="Express logo" />
+            </div>
+            Express
+          </li>
+          <li>
+            <div className={styles.Container}>
               <img src="/assets/python.png" alt="Python logo" />
             </div>
             Python
@@ -68,6 +80,34 @@ export default function About(): ReactElement {
               <img src="/assets/flask.png" alt="Flask logo" />
             </div>
             Flask
+          </li>
+
+          <li>
+            <div className={styles.Container}>
+              <img src="/assets/graphql.png" alt="GraphQL logo" />
+            </div>
+            GraphQL
+          </li>
+          <li>
+            <div className={styles.Container}>
+              <img src="/assets/postgresql.png" alt="PostgreSQL logo" />
+            </div>
+            PostgreSQL
+          </li>
+          <li>
+            <div className={styles.Container}>
+              <img src="/assets/jest.png" alt="Jest logo" />
+            </div>
+            Jest
+          </li>
+          <li>
+            <div className={styles.Container}>
+              <img
+                src="/assets/react-testing-library.png"
+                alt="Testing Library logo"
+              />
+            </div>
+            Testing Library
           </li>
           <li>
             <div className={styles.Container}>
